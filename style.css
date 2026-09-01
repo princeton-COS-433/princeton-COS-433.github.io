@@ -570,14 +570,6 @@ tbody th {
   font-style: italic;
 }
 
-.schedule-summary {
-  max-width: 52rem;
-  margin: -1rem 0 2rem;
-  color: var(--ink-soft);
-  font-family: var(--serif);
-  font-size: 1.1rem;
-}
-
 .calendar-table th:first-child {
   width: 9rem;
   white-space: nowrap;
