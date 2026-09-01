@@ -111,11 +111,28 @@ a:focus-visible {
   color: var(--orange);
 }
 
+.header-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
 .university {
   margin: 0;
-  color: var(--ink-soft);
   font-family: var(--serif);
   font-size: 0.95rem;
+}
+
+.header-semester {
+  padding-left: 0.8rem;
+  border-left: 1px solid var(--line-dark);
+  color: var(--orange-dark);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .site-nav {
@@ -156,8 +173,6 @@ a:focus-visible {
 }
 
 .eyebrow,
-.kicker,
-.section-number,
 dt {
   color: var(--orange-dark);
   font-size: 0.76rem;
@@ -230,7 +245,6 @@ h1 {
 
 .coming-soon {
   max-width: 52rem;
-  margin-left: 4.5rem;
   padding: clamp(1.5rem, 3vw, 2.25rem);
   background: var(--surface);
   border-left: 4px solid var(--orange);
@@ -246,7 +260,6 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  margin-left: 4.5rem;
 }
 
 .offering-card {
@@ -331,19 +344,7 @@ h1 {
 }
 
 .section-heading {
-  display: grid;
-  grid-template-columns: 4.5rem 1fr;
-  align-items: start;
   margin-bottom: 3rem;
-}
-
-.section-number,
-.kicker {
-  margin: 0 0 0.55rem;
-}
-
-.section-number {
-  color: var(--line-dark);
 }
 
 h2 {
@@ -368,7 +369,6 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 1.6fr) minmax(16rem, 0.8fr);
   gap: clamp(2rem, 7vw, 7rem);
-  padding-left: 4.5rem;
 }
 
 .overview-grid > div > p {
@@ -394,7 +394,6 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1px;
-  margin-left: 4.5rem;
   background: var(--line);
   border: 1px solid var(--line);
 }
@@ -431,39 +430,6 @@ h3 {
 
 .policy-block li::marker {
   color: var(--orange);
-}
-
-.grade-block {
-  display: flex;
-  flex-direction: column;
-}
-
-.grade-bar {
-  display: flex;
-  height: 2rem;
-  margin-top: auto;
-  padding-top: 0.7rem;
-  color: white;
-  font-size: 0.72rem;
-  font-weight: 800;
-  line-height: 2rem;
-}
-
-.grade-major,
-.grade-final {
-  display: block;
-  padding-inline: 0.6rem;
-}
-
-.grade-major {
-  width: 75%;
-  background: var(--ink);
-}
-
-.grade-final {
-  width: 25%;
-  min-width: 3.4rem;
-  background: var(--orange);
 }
 
 .table-wrap {
@@ -599,7 +565,6 @@ tbody th {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1px;
-  margin-left: 4.5rem;
   background: var(--line);
   border: 1px solid var(--line);
 }
@@ -701,24 +666,13 @@ tbody th {
     font-size: clamp(3.25rem, 15.5vw, 5.5rem);
   }
 
-  .section-heading {
-    grid-template-columns: 3rem 1fr;
-  }
-
   .overview-grid {
     grid-template-columns: 1fr;
-    padding-left: 3rem;
-  }
-
-  .coming-soon,
-  .offering-grid {
-    margin-left: 3rem;
   }
 
   .policy-grid,
   .resources-grid {
     grid-template-columns: 1fr;
-    margin-left: 3rem;
   }
 
   .policy-lead,
@@ -742,30 +696,8 @@ tbody th {
     gap: 0.2rem;
   }
 
-  .section-heading {
-    display: block;
-  }
-
-  .section-number {
-    margin-bottom: 0.35rem;
-  }
-
-  .overview-grid {
-    padding-left: 0;
-  }
-
-  .coming-soon,
-  .offering-grid {
-    margin-left: 0;
-  }
-
   .offering-grid {
     grid-template-columns: 1fr;
-  }
-
-  .policy-grid,
-  .resources-grid {
-    margin-left: 0;
   }
 
   .site-footer {
