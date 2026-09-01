@@ -1,0 +1,3 @@
+# Publish only finalized, numbered Fall 2026 slide PDFs from this folder.
+slides/fall-2026/*
+!slides/fall-2026/L[0-9][0-9]-final.pdf

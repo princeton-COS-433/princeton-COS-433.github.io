@@ -26,8 +26,11 @@
       </div>
       <nav class="site-nav" aria-label="Course navigation">
         <div class="nav-inner">
-          <a href="#overview">Fall 2026</a>
+          <a href="#overview">Course Description</a>
+          <a href="#problem-sets">Problem Sets</a>
           <a href="#schedule">Schedule</a>
+          <a href="#policies">Policies</a>
+          <a href="#resources">Resources</a>
           <a href="#previous-offerings">Previous Offerings</a>
         </div>
       </nav>
@@ -65,10 +68,70 @@
 
       <section class="section" id="overview" aria-labelledby="overview-title">
         <div class="section-heading">
-          <h2 id="overview-title">Fall 2026</h2>
+          <h2 id="overview-title">Course Description</h2>
         </div>
-        <div class="coming-soon">
-          <p>Topics, assignments, policies, and course resources will be added here. The complete Fall 2025 and Fall 2024 course websites remain available below.</p>
+        <div class="prose overview-grid">
+          <div>
+            <p>An introduction to the theory of modern cryptography. Topics covered include private key and public key encryption schemes, digital signatures, pseudorandom generators and functions, zero-knowledge proofs, and some advanced topics.</p>
+          </div>
+          <aside class="prerequisite">
+            <h3>Prerequisites</h3>
+            <p>COS 330 or equivalent mathematical maturity</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="problem-sets" aria-labelledby="problem-sets-title">
+        <div class="section-heading">
+          <h2 id="problem-sets-title">Problem Sets</h2>
+        </div>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Problem sets table">
+          <table class="assignments-table">
+            <thead>
+              <tr>
+                <th scope="col">Assignment</th>
+                <th scope="col">Released</th>
+                <th scope="col">Due</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Problem Set 0</th>
+                <td><time datetime="2026-09-02">9/2/26</time></td>
+                <td><time datetime="2026-09-09">9/9/26</time></td>
+              </tr>
+              <tr>
+                <th scope="row">Problem Set 1</th>
+                <td><time datetime="2026-09-09">9/9/26</time></td>
+                <td><time datetime="2026-09-23">9/23/26</time></td>
+              </tr>
+              <tr>
+                <th scope="row">Problem Set 2</th>
+                <td><time datetime="2026-09-23">9/23/26</time></td>
+                <td><time datetime="2026-10-07">10/7/26</time></td>
+              </tr>
+              <tr>
+                <th scope="row">Problem Set 3</th>
+                <td><time datetime="2026-10-07">10/7/26</time></td>
+                <td><time datetime="2026-10-28">10/28/26</time></td>
+              </tr>
+              <tr>
+                <th scope="row">Problem Set 4</th>
+                <td><time datetime="2026-10-28">10/28/26</time></td>
+                <td><time datetime="2026-11-11">11/11/26</time></td>
+              </tr>
+              <tr>
+                <th scope="row">Problem Set 5</th>
+                <td><time datetime="2026-11-11">11/11/26</time></td>
+                <td><time datetime="2026-12-02">12/2/26</time></td>
+              </tr>
+              <tr>
+                <th scope="row">Problem Set 6/Final <span class="table-note">No collaboration allowed.</span></th>
+                <td><time datetime="2026-12-02">12/2/26</time></td>
+                <td><time datetime="2026-12-16">12/16/26</time></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -80,39 +143,120 @@
         <div class="table-wrap" tabindex="0" role="region" aria-label="Fall 2026 course schedule table">
           <table class="schedule-table">
             <thead>
-              <tr><th scope="col">Date</th><th scope="col">Topic</th><th scope="col">Materials</th><th scope="col">Reading</th></tr>
+              <tr><th scope="col">Date</th><th scope="col">Topic</th><th scope="col">Materials</th><th scope="col">Reading</th><th scope="col">Problem Sets</th></tr>
             </thead>
             <tbody>
-              <tr><th scope="row"><time datetime="2026-09-02">Wed 9/2</time></th><td>Introduction, Secret-Key Encryption.</td><td><a class="material-link" href="https://drive.google.com/file/d/18-8f35EoISDf7b5LdAP99ct_5Gtya00k/view?usp=drive_link">(draft)</a></td><td>KL Chapter 1.</td></tr>
-              <tr class="no-class"><th scope="row"><time datetime="2026-09-07">Mon 9/7</time></th><td>No class — Labor Day</td><td>—</td><td>—</td></tr>
-              <tr><th scope="row"><time datetime="2026-09-09">Wed 9/9</time></th><td>Perfect Secrecy.</td><td><a class="material-link" href="https://drive.google.com/file/d/12aoy3l3z8WPxBjiun3dVMg1784HGVq_s/view?usp=sharing">(draft)</a></td><td>KL Chapter 2.</td></tr>
-              <tr><th scope="row"><time datetime="2026-09-14">Mon 9/14</time></th><td>Computational Security.</td><td><a class="material-link" href="https://drive.google.com/file/d/1PIK7JbDWfezz9xmwLi-mUh3DCpV3vAPE/view?usp=sharing">(draft)</a></td><td>KL Chapter 3, Sections 3.1-3.2</td></tr>
-              <tr><th scope="row"><time datetime="2026-09-16">Wed 9/16</time></th><td>Pseudorandom Generators.</td><td><a class="material-link" href="https://drive.google.com/file/d/1rcJu6Id6TrLnGwtyPobHC7Zx806gvZAl/view?usp=sharing">(draft)</a></td><td>KL Chapter 3, Sections 3.3-3.4.1</td></tr>
-              <tr><th scope="row"><time datetime="2026-09-21">Mon 9/21</time></th><td>CPA-secure secret-key encryption.</td><td><a class="material-link" href="https://drive.google.com/file/d/1RD-7Ivets2uTHooRAUW42wmRlKIAdzxn/view?usp=sharing">(draft)</a></td><td>KL Sections 3.4.2-3.5</td></tr>
-              <tr><th scope="row"><time datetime="2026-09-23">Wed 9/23</time></th><td>Pseudorandom Functions.</td><td><a class="material-link" href="https://drive.google.com/file/d/1CBSHwnSHDPjiQ8L0jfFwEDRs4XE1sNVu/view?usp=sharing">(draft)</a></td><td>KL Sections 3.5, 8.5</td></tr>
-              <tr><th scope="row"><time datetime="2026-09-28">Mon 9/28</time></th><td>Pseudorandom Permutations and Block Ciphers.</td><td><a class="material-link" href="https://drive.google.com/file/d/1DyHzp0PgN_S6KBxNfxg01xQQ3-xSGrtK/view?usp=sharing">(draft)</a></td><td>KL Sections 4.1-4.3</td></tr>
-              <tr><th scope="row"><time datetime="2026-09-30">Wed 9/30</time></th><td>Authentication, CCA-secure encryption.</td><td><a class="material-link" href="https://drive.google.com/file/d/1zrkRRrMTCy5ecGZ3jvvA7op30GhUSkqJ/view?usp=sharing">(draft)</a></td><td>KL Chapter 5</td></tr>
-              <tr><th scope="row"><time datetime="2026-10-05">Mon 10/5</time></th><td>One-Way Functions, Hard-Core Predicates.</td><td><a class="material-link" href="https://drive.google.com/file/d/1qXOz8G_7vWf9zZa-Jchz05e4fZweLjlv/view?usp=sharing">(draft)</a></td><td>KL Section 8.1</td></tr>
-              <tr><th scope="row"><time datetime="2026-10-07">Wed 10/7</time></th><td>Goldreich-Levin Theorem.</td><td><a class="material-link" href="https://drive.google.com/file/d/1RoXskes45ksb7o4kS0N7EIjdBux50q77/view?usp=sharing">(draft)</a></td><td>KL Section 8.3</td></tr>
-              <tr><th scope="row"><time datetime="2026-10-12">Mon 10/12</time></th><td>Cryptography from Number Theory (Part I).</td><td><a class="material-link" href="https://drive.google.com/file/d/1siyY0_MF6hfh0OU7AZ8KRLyNMC4eXglv/view?usp=sharing">(draft)</a></td><td>KL Chapter 9, Section 10.2. <a href="https://people.csail.mit.edu/vinodv/6892-Fall2013/Angluin.pdf">Notes on Computational Number Theory</a>.</td></tr>
-              <tr><th scope="row"><time datetime="2026-10-14">Wed 10/14</time></th><td>Cryptography from Number Theory (Part II), Public-Key Encryption.</td><td><a class="material-link" href="https://drive.google.com/file/d/1XM1lCHMiwD9O0X9BN7FLMHGYerb-CwvB/view?usp=sharing">(draft)</a></td><td>KL Chapter 9, Section 10.2</td></tr>
-              <tr class="no-class"><th scope="row"><time datetime="2026-10-19">Mon 10/19</time></th><td>No class — Fall Recess</td><td>—</td><td>—</td></tr>
-              <tr class="no-class"><th scope="row"><time datetime="2026-10-21">Wed 10/21</time></th><td>No class — Fall Recess</td><td>—</td><td>—</td></tr>
-              <tr><th scope="row"><time datetime="2026-10-26">Mon 10/26</time></th><td>Cryptography from Number Theory, Public-Key Encryption (Part III).</td><td><a class="material-link" href="https://drive.google.com/file/d/1wHSw-YWmD0M4wyPM2nEdthQq2Al0sqWq/view?usp=sharing">(draft)</a></td><td>KL Chapter 9, Section 10.2</td></tr>
-              <tr><th scope="row"><time datetime="2026-10-28">Wed 10/28</time></th><td>Discrete Logarithms (PKE Part IV).</td><td><a class="material-link" href="https://drive.google.com/file/d/1MPDcsbA6n1McgMyE3VOOz8hIDOcM-lq3/view?usp=sharing">(draft)</a></td><td>KL Chapter 9, Section 10.2</td></tr>
-              <tr><th scope="row"><time datetime="2026-11-02">Mon 11/2</time></th><td>Digital Signatures (Part I). RSA signatures. One-time signatures.</td><td><a class="material-link" href="https://drive.google.com/file/d/1XCKcaAiaWb82TvBILSTglvpg1WAm1U7z/view?usp=sharing">(draft)</a></td><td>KL Sections 13.1, 13.2, 13.4.1</td></tr>
-              <tr><th scope="row"><time datetime="2026-11-04">Wed 11/4</time></th><td>Digital Signatures (Part II). Hash functions and the random oracle model.</td><td><a href="https://cseweb.ucsd.edu/~mihir/papers/ro.pdf">Bellare-Rogaway Paper</a></td><td>KL Chapter 6.</td></tr>
-              <tr><th scope="row"><time datetime="2026-11-09">Mon 11/9</time></th><td>Digital Signatures (Part III). Hash functions (continued), RSA signatures.</td><td><a class="material-link" href="https://drive.google.com/file/d/1Dc5X8AwZjN6Wyof--a5vnM1j_wyb1w2i/view?usp=sharing">(draft)</a></td><td>KL Chapter 6, KL Sections 13.4-13.5</td></tr>
-              <tr><th scope="row"><time datetime="2026-11-11">Wed 11/11</time></th><td>Digital Signatures (Part IV): DSA signatures. Public-key crypto recap.</td><td><a class="material-link" href="https://drive.google.com/file/d/1dXNvu3mXZztiOi_9j07PPttYM57ew-uw/view?usp=sharing">(draft)</a></td><td>KL Sections 13.4-13.5.</td></tr>
-              <tr><th scope="row"><time datetime="2026-11-16">Mon 11/16</time></th><td>Zero-Knowledge Proofs (Part I).</td><td><a class="material-link" href="https://drive.google.com/file/d/1dofGlDNZ3c76ZO-uIUDTd1GIA-BU_zuX/view?usp=sharing">(draft)</a></td><td><a href="https://www.wisdom.weizmann.ac.il/~oded/foc-drafts.html">Goldreich</a> Chapter 4.</td></tr>
-              <tr><th scope="row"><time datetime="2026-11-18">Wed 11/18</time></th><td>Zero-Knowledge Proofs (Part II).</td><td><a class="material-link" href="https://drive.google.com/file/d/1VFEh350lSvOT8fN_5NuVF4pLzF_-3JDx/view?usp=sharing">(draft)</a></td><td><a href="https://www.wisdom.weizmann.ac.il/~oded/foc-drafts.html">Goldreich</a> Chapter 4.</td></tr>
-              <tr><th scope="row"><time datetime="2026-11-23">Mon 11/23</time></th><td>Zero-Knowledge Proofs (Part III).</td><td><a class="material-link" href="https://drive.google.com/file/d/1jfxRk-QSm9E1-xD0cqAn1sD_DAxAmkL5/view?usp=sharing">(draft)</a></td><td>Goldreich Chapter 4.</td></tr>
-              <tr class="no-class"><th scope="row"><time datetime="2026-11-25">Wed 11/25</time></th><td>No class — Thanksgiving Recess</td><td>—</td><td>—</td></tr>
-              <tr><th scope="row"><time datetime="2026-11-30">Mon 11/30</time></th><td>Learning with Errors, Homomorphic Encryption (Part I).</td><td>—</td><td><a href="https://eprint.iacr.org/2015/939.pdf">Peikert</a> Sections 4.2, 5.2. <a href="https://advancedcrypto.github.io/Lecture1.pdf">Vaikuntanathan's Lecture Notes</a>.</td></tr>
-              <tr><th scope="row"><time datetime="2026-12-02">Wed 12/2</time></th><td>Learning with Errors, Homomorphic Encryption (Part II).</td><td>—</td><td><a href="https://eprint.iacr.org/2015/939.pdf">Peikert</a> Section 6.1. <a href="https://advancedcrypto.github.io/Lecture4a.pdf">Vaikuntanathan's Lecture Notes</a>.</td></tr>
-              <tr><th scope="row"><time datetime="2026-12-07">Mon 12/7</time></th><td>—</td><td>—</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-09-02">Wed 9/2</time></th><td>Introduction, Secret-Key Encryption.</td><td><a class="material-link" href="slides/fall-2026/L01-final.pdf">(draft)</a></td><td>KL Chapter 1.</td><td>Problem Set 0 released</td></tr>
+              <tr class="no-class"><th scope="row"><time datetime="2026-09-07">Mon 9/7</time></th><td>No class — Labor Day</td><td>—</td><td>—</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-09-09">Wed 9/9</time></th><td>Perfect Secrecy.</td><td><a class="material-link" href="slides/fall-2026/L02-final.pdf">(draft)</a></td><td>KL Chapter 2.</td><td>Problem Set 0 due<br>Problem Set 1 released</td></tr>
+              <tr><th scope="row"><time datetime="2026-09-14">Mon 9/14</time></th><td>Computational Security.</td><td><a class="material-link" href="slides/fall-2026/L03-final.pdf">(draft)</a></td><td>KL Chapter 3, Sections 3.1-3.2</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-09-16">Wed 9/16</time></th><td>Pseudorandom Generators.</td><td><a class="material-link" href="slides/fall-2026/L04-final.pdf">(draft)</a></td><td>KL Chapter 3, Sections 3.3-3.4.1</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-09-21">Mon 9/21</time></th><td>CPA-secure secret-key encryption.</td><td><a class="material-link" href="slides/fall-2026/L05-final.pdf">(draft)</a></td><td>KL Sections 3.4.2-3.5</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-09-23">Wed 9/23</time></th><td>Pseudorandom Functions.</td><td><a class="material-link" href="slides/fall-2026/L06-final.pdf">(draft)</a></td><td>KL Sections 3.5, 8.5</td><td>Problem Set 1 due<br>Problem Set 2 released</td></tr>
+              <tr><th scope="row"><time datetime="2026-09-28">Mon 9/28</time></th><td>Pseudorandom Permutations and Block Ciphers.</td><td><a class="material-link" href="slides/fall-2026/L07-final.pdf">(draft)</a></td><td>KL Sections 4.1-4.3</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-09-30">Wed 9/30</time></th><td>Authentication, CCA-secure encryption.</td><td><a class="material-link" href="slides/fall-2026/L08-final.pdf">(draft)</a></td><td>KL Chapter 5</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-10-05">Mon 10/5</time></th><td>One-Way Functions, Hard-Core Predicates.</td><td><a class="material-link" href="slides/fall-2026/L09-final.pdf">(draft)</a></td><td>KL Section 8.1</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-10-07">Wed 10/7</time></th><td>Goldreich-Levin Theorem.</td><td><a class="material-link" href="slides/fall-2026/L10-final.pdf">(draft)</a></td><td>KL Section 8.3</td><td>Problem Set 2 due<br>Problem Set 3 released</td></tr>
+              <tr><th scope="row"><time datetime="2026-10-12">Mon 10/12</time></th><td>Cryptography from Number Theory (Part I).</td><td><a class="material-link" href="slides/fall-2026/L11-final.pdf">(draft)</a></td><td>KL Chapter 9, Section 10.2. <a href="https://people.csail.mit.edu/vinodv/6892-Fall2013/Angluin.pdf">Notes on Computational Number Theory</a>.</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-10-14">Wed 10/14</time></th><td>Cryptography from Number Theory (Part II), Public-Key Encryption.</td><td><a class="material-link" href="slides/fall-2026/L12-final.pdf">(draft)</a></td><td>KL Chapter 9, Section 10.2</td><td>—</td></tr>
+              <tr class="no-class"><th scope="row"><time datetime="2026-10-19">Mon 10/19</time></th><td>No class — Fall Recess</td><td>—</td><td>—</td><td>—</td></tr>
+              <tr class="no-class"><th scope="row"><time datetime="2026-10-21">Wed 10/21</time></th><td>No class — Fall Recess</td><td>—</td><td>—</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-10-26">Mon 10/26</time></th><td>Cryptography from Number Theory, Public-Key Encryption (Part III).</td><td><a class="material-link" href="slides/fall-2026/L13-final.pdf">(draft)</a></td><td>KL Chapter 9, Section 10.2</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-10-28">Wed 10/28</time></th><td>Discrete Logarithms (PKE Part IV).</td><td><a class="material-link" href="slides/fall-2026/L14-final.pdf">(draft)</a></td><td>KL Chapter 9, Section 10.2</td><td>Problem Set 3 due<br>Problem Set 4 released</td></tr>
+              <tr><th scope="row"><time datetime="2026-11-02">Mon 11/2</time></th><td>Digital Signatures (Part I). RSA signatures. One-time signatures.</td><td><a class="material-link" href="slides/fall-2026/L15-final.pdf">(draft)</a></td><td>KL Sections 13.1, 13.2, 13.4.1</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-11-04">Wed 11/4</time></th><td>Digital Signatures (Part II). Hash functions and the random oracle model.</td><td><a href="https://cseweb.ucsd.edu/~mihir/papers/ro.pdf">Bellare-Rogaway Paper</a></td><td>KL Chapter 6.</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-11-09">Mon 11/9</time></th><td>Digital Signatures (Part III). Hash functions (continued), RSA signatures.</td><td><a class="material-link" href="slides/fall-2026/L17-final.pdf">(draft)</a></td><td>KL Chapter 6, KL Sections 13.4-13.5</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-11-11">Wed 11/11</time></th><td>Digital Signatures (Part IV): DSA signatures. Public-key crypto recap.</td><td><a class="material-link" href="slides/fall-2026/L18-final.pdf">(draft)</a></td><td>KL Sections 13.4-13.5.</td><td>Problem Set 4 due<br>Problem Set 5 released</td></tr>
+              <tr><th scope="row"><time datetime="2026-11-16">Mon 11/16</time></th><td>Zero-Knowledge Proofs (Part I).</td><td><a class="material-link" href="slides/fall-2026/L19-final.pdf">(draft)</a></td><td><a href="https://www.wisdom.weizmann.ac.il/~oded/foc-drafts.html">Goldreich</a> Chapter 4.</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-11-18">Wed 11/18</time></th><td>Zero-Knowledge Proofs (Part II).</td><td><a class="material-link" href="slides/fall-2026/L20-final.pdf">(draft)</a></td><td><a href="https://www.wisdom.weizmann.ac.il/~oded/foc-drafts.html">Goldreich</a> Chapter 4.</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-11-23">Mon 11/23</time></th><td>Zero-Knowledge Proofs (Part III).</td><td><a class="material-link" href="slides/fall-2026/L21-final.pdf">(draft)</a></td><td>Goldreich Chapter 4.</td><td>—</td></tr>
+              <tr class="no-class"><th scope="row"><time datetime="2026-11-25">Wed 11/25</time></th><td>No class — Thanksgiving Recess</td><td>—</td><td>—</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-11-30">Mon 11/30</time></th><td>Learning with Errors, Homomorphic Encryption (Part I).</td><td>—</td><td><a href="https://eprint.iacr.org/2015/939.pdf">Peikert</a> Sections 4.2, 5.2. <a href="https://advancedcrypto.github.io/Lecture1.pdf">Vaikuntanathan's Lecture Notes</a>.</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2026-12-02">Wed 12/2</time></th><td>Learning with Errors, Homomorphic Encryption (Part II).</td><td>—</td><td><a href="https://eprint.iacr.org/2015/939.pdf">Peikert</a> Section 6.1. <a href="https://advancedcrypto.github.io/Lecture4a.pdf">Vaikuntanathan's Lecture Notes</a>.</td><td>Problem Set 5 due<br>Problem Set 6 released</td></tr>
+              <tr><th scope="row"><time datetime="2026-12-07">Mon 12/7</time></th><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+              <tr class="no-class"><th scope="row"><time datetime="2026-12-16">Wed 12/16</time></th><td>Final assessment period</td><td>—</td><td>—</td><td>Problem Set 6 due</td></tr>
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <section class="section" id="policies" aria-labelledby="policies-title">
+        <div class="section-heading">
+          <h2 id="policies-title">Course Requirements and Policies</h2>
+        </div>
+        <div class="policy-grid">
+          <article class="policy-block policy-lead">
+            <h3>Assignments</h3>
+            <p>This course will have the following graded assignments:</p>
+            <ul>
+              <li><strong>Problem Set 0:</strong> A short, one-week problem set at the beginning of the semester to help you calibrate your background.</li>
+              <li><strong>Problem Sets 1–5:</strong> Regular-length, biweekly problem sets.</li>
+              <li><strong>Problem Set 6:</strong> A cumulative problem set that will serve as your final.</li>
+            </ul>
+            <p><strong>Grading:</strong> Your assignments will be graded in two equally weighted parts:</p>
+            <ol>
+              <li>Your written work.</li>
+              <li>Check-ins with the course staff. After Problem Sets 0, 3, and 6, you’ll have a short individual meeting about your recent solutions. To receive full credit, simply explain in your own words how you approached the problems and arrived at your answers.</li>
+            </ol>
+          </article>
+
+          <article class="policy-block">
+            <h3>Collaboration Policy</h3>
+            <p>You are free (and strongly encouraged!) to collaborate with each other on Problem Sets 0–5. Please adhere to the following policies regarding collaboration and attribution.</p>
+            <ul>
+              <li>Individually write up problem set solutions in your own words. You may not share write-ups with your collaborators.</li>
+              <li>List all student collaborators and consulted outside sources (e.g. textbooks, course notes) in your problem set solutions.</li>
+              <li>You may not collaborate with other students on Problem Set 6.</li>
+            </ul>
+          </article>
+
+          <article class="policy-block">
+            <h3>AI Use Policy</h3>
+            <p>AI tools can be useful learning aids, and you are welcome to use them to explore and review general course material. You may also use AI to generate visual aids, such as diagrams, in your assignments. However, please follow two rules:</p>
+            <ul>
+              <li>Do not ask AI tools for solutions to assigned problems.</li>
+              <li>Submit only writing that is entirely your own; do not submit any AI-generated text.</li>
+            </ul>
+          </article>
+
+          <article class="policy-block">
+            <h3>Late Submission and Homework Grading Policy</h3>
+            <p>You may take up to two late days for any problem set. These extensions are granted automatically (no need to ask permission!). We cannot accept any submissions that are more than two days late. If you have an extenuating circumstance such as a medical emergency, please reach out to the course staff.</p>
+            <p>Problem Set 0 is an exception: we cannot accept late submissions outside of extenuating circumstances.</p>
+            <p>To encourage timely submission, two bonus points (out of 100) will be granted to submissions that are on time.</p>
+          </article>
+
+          <article class="policy-block">
+            <h3>Your Course Grade</h3>
+            <p>Problem Sets 0–5 jointly count for 75% of your grade, and Problem Set 6 counts for 25% of your grade.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="resources" aria-labelledby="resources-title">
+        <div class="section-heading">
+          <h2 id="resources-title">Resources</h2>
+        </div>
+        <div class="resources-grid">
+          <article class="resource-block resource-primary">
+            <p class="resource-label">Textbooks</p>
+            <p>There is no official textbook for this course. The textbook most relevant to COS 433 is <a href="https://www.amazon.com/Introduction-Cryptography-Chapman-Network-Security/dp/0815354363?crid=26S3CMSML5BNW&amp;dib=eyJ2IjoiMSJ9.MkAYgjB3NdQPfsVznnhBB7H2rwZAd39FW0QY09JhkgXg32PTzg06QoyiJFtkW-ui.Piqp25gcq0TBzhizxxLYWNKhxDN2q-RNJmiVXj6zwCg&amp;dib_tag=se&amp;keywords=introduction+to+modern+cryptography+katz+lindell&amp;qid=1756949759&amp;s=books&amp;sprefix=introduction+to+modern+cryptography+katz+lindell%2Cstripbooks%2C89&amp;sr=1-1">Katz and Lindell</a> (3rd edition).</p>
+            <p><a href="https://toc.cryptobook.us/">Boneh-Shoup</a> and <a href="https://www.wisdom.weizmann.ac.il/~oded/foc-book.html">Goldreich</a> are somewhat more advanced textbooks.</p>
+            <p>These <a href="https://people.csail.mit.edu/vinodv/6892-Fall2013/Angluin.pdf">lecture notes by Angluin</a> are a useful reference on computational number theory.</p>
+          </article>
+
+          <article class="resource-block">
+            <p class="resource-label">Course Websites</p>
+            <p>The courses most closely related to this one are <a href="https://cs127.boazbarak.org/">CS 127 at Harvard</a>, <a href="http://mit6875.org/">6.875 at MIT</a>, and <a href="https://mzhandry.github.io/courses/2020-Fall-COS433/">prior iterations of COS 433 at Princeton</a>.</p>
+          </article>
+
+          <article class="resource-block">
+            <p class="resource-label">Advanced Readings</p>
+            <ul class="resource-list">
+              <li><a href="https://drive.google.com/file/d/1I5aObjjX_0Zlpn97mNiALAsqbqVJDV7d/view?usp=drive_link">Notes</a> on One-Way Functions and Pseudorandom Generators</li>
+              <li><a href="https://link.springer.com/book/10.1007/978-3-319-57048-8">Tutorials</a> on the foundations of cryptography (ed. Yehuda Lindell)</li>
+            </ul>
+          </article>
         </div>
       </section>
 
