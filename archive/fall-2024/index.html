@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Archived Fall 2024 offering of COS 433/533: Cryptography at Princeton University.">
+    <meta name="theme-color" content="#e77500">
+    <title>COS 433/533: Cryptography — Fall 2024 Archive</title>
+    <link rel="stylesheet" href="../../style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="header-rule" aria-hidden="true"></div>
+      <div class="header-inner">
+        <a class="course-mark" href="#top" aria-label="COS 433/533 home">
+          <span>COS 433</span>
+          <span class="course-mark-divider" aria-hidden="true">/</span>
+          <span>533</span>
+        </a>
+        <p class="university">Princeton University</p>
+      </div>
+      <nav class="site-nav" aria-label="Course navigation">
+        <div class="nav-inner">
+          <a href="#overview">Overview</a>
+          <a href="#policies">Policies</a>
+          <a href="#problem-sets">Problem Sets</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#resources">Resources</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="course-title">
+        <div class="hero-copy">
+          <p class="archive-notice">Archived offering · <a href="../../">View the current course</a></p>
+          <p class="eyebrow">Fall 2024 · COS 433 / 533</p>
+          <h1 id="course-title">Cryptography</h1>
+          <p class="hero-intro">Welcome! This is the course homepage for the Fall 2024 iteration of COS 433/533.</p>
+        </div>
+        <dl class="course-facts">
+          <div>
+            <dt>Meets</dt>
+            <dd>Tuesdays and Thursdays<br>11am-12:20pm</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>CS 104</dd>
+          </div>
+          <div>
+            <dt>Instructor</dt>
+            <dd><a href="https://sites.google.com/view/alex-lombardi/home">Alex Lombardi</a><br><span>Office Hours: Thursdays 12:30pm-1:30pm, CS 312</span></dd>
+          </div>
+          <div>
+            <dt>TAs</dt>
+            <dd>
+              Shreyas Gandlur<br><span>Office Hours: Tuesdays 5pm-6pm, Friend Center 010B</span><br>
+              Yaxin Tu<br><span>Office Hours: Mondays 2pm-3pm, CS 401</span><br>
+              Yuanhao Wang<br><span>Office Hours: Wednesdays 3pm-4pm, Friend Center 010A</span>
+            </dd>
+          </div>
+          <div>
+            <dt>Staff email</dt>
+            <dd><a href="mailto:cos433staff@princeton.edu">cos433staff@princeton.edu</a></dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section" id="overview" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">01</p>
+          <div>
+            <p class="kicker">About the course</p>
+            <h2 id="overview-title">Overview</h2>
+          </div>
+        </div>
+        <div class="prose overview-grid">
+          <div>
+            <h3>Course Description</h3>
+            <p>An introduction to the theory of modern cryptography. Topics covered include private key and public key encryption schemes, digital signatures, pseudorandom generators and functions, zero-knowledge proofs, and some advanced topics.</p>
+          </div>
+          <aside class="prerequisite">
+            <h3>Prerequisites</h3>
+            <p>COS 240 or equivalent mathematical maturity.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="policies" aria-labelledby="policies-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">02</p>
+          <div>
+            <p class="kicker">Expectations</p>
+            <h2 id="policies-title">Course Requirements and Policies</h2>
+          </div>
+        </div>
+        <div class="policy-grid">
+          <article class="policy-block policy-lead">
+            <h3>Problem Sets</h3>
+            <p>Problem sets will be assigned roughly once per week, with 8 in total. Problem sets will typically be released on Fridays at 11:59pm Eastern Time and due exactly one week later. UPDATE: problem sets will be due on Wednesdays starting from problem set 3, due October 2nd (see below).</p>
+            <p>Every problem set will have a "COS 433" section and a "COS 533" section; students enrolled in COS 433/533 should turn in solutions for the appropriate section. COS 433 students may submit solutions to COS 533 problems for (minor) extra credit, but are encouraged to prioritize the COS 433 problems and only attempt the advanced problems if they are looking for a challenge.</p>
+            <p>Enrolled students should submit solutions to the problem sets on Gradescope. Solutions must be typed; we strongly encourage typesetting solutions in LaTeX.</p>
+            <p>All problem sets will be posted below over the course of the semester.</p>
+          </article>
+
+          <article class="policy-block">
+            <h3>Collaboration Policy</h3>
+            <p>You are free (and strongly encouraged!) to collaborate with each other on problem sets. Please adhere to the following policies regarding collaboration and attribution.</p>
+            <ul>
+              <li>Individually write up problem set solutions in your own words. You may not share write-ups with your collaborators.</li>
+              <li>List all student collaborators and consulted outside sources (e.g. textbooks) in your problem set solutions.</li>
+              <li>You may not consult large language models or AI assistants such as (Chat)GPT.</li>
+            </ul>
+          </article>
+
+          <article class="policy-block">
+            <h3>Late Submission and Homework Grading Policy</h3>
+            <p>You may take up to two late days for any problem set. These extensions are granted automatically (no need to ask permission!). We cannot accept any submissions that are more than two days late. If you have an extenuating circumstance such as a medical emergency, please reach out to the course staff.</p>
+            <p>To encourage timely submission, two bonus points (out of 100) will be granted to submissions that are on time.</p>
+            <p>We will automatically drop your lowest problem set grade, so no single week will negatively impact your grade.</p>
+          </article>
+
+          <article class="policy-block">
+            <h3>Take home final exam (COS 433 only)</h3>
+            <p>COS 433 students will have a take-home final exam in December (during Finals Period). Students may not collaborate with each other or consult external sources while taking the Final Exam. However, you may use the textbooks and slides linked to directly on this website.</p>
+            <p>Time Period: Monday, 12/16 7am - Wednesday, 12/18 7am.</p>
+            <p>The exam will be available on gradescope.</p>
+          </article>
+
+          <article class="policy-block">
+            <h3>Final Project (COS 533 only)</h3>
+            <p>COS 533 students will do a final project that is either an original exposition of a topic not covered in this class, or (if you are interested in doing cryptography research) original research in cryptography. A suggested list of exposition topics will be provided.</p>
+          </article>
+
+          <article class="policy-block">
+            <h3>Scribe Notes (COS 533 only)</h3>
+            <p>Each student enrolled in COS 533 is required to write up scribe notes (in LaTeX) for one lecture. These notes may be posted on the course website. Sign up to scribe <a href="https://docs.google.com/spreadsheets/d/1OkGU-1TvZ5E2zgRWZABC5kylXxtdlZZu6oyZ9bKEz8Q/edit?usp=sharing">here</a>.</p>
+          </article>
+
+          <article class="policy-block policy-lead">
+            <h3>Your Course Grade</h3>
+            <p>In COS 433, your grade will be based on Problem Sets (70%) and the Take-Home Final Exam (30%)</p>
+            <p>In COS 533, your grade will be based on Problem Sets (60%), Scribing (10%), and the Final Project (30%)</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="problem-sets" aria-labelledby="problem-sets-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">03</p>
+          <div>
+            <p class="kicker">Assignments</p>
+            <h2 id="problem-sets-title">Problem Sets</h2>
+          </div>
+        </div>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Problem sets table">
+          <table class="assignments-table">
+            <thead>
+              <tr><th scope="col">Assignment</th><th scope="col">Released</th><th scope="col">Due</th><th scope="col">Links</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Problem Set 1</th><td><time datetime="2024-09-06">9/6/24</time></td><td><time datetime="2024-09-13">9/13/24</time></td><td><a class="material-link" href="https://drive.google.com/file/d/1F529J0idcLSIoOwxctUUC-My8OvthMAl/view?usp=sharing">Problem Set 1</a></td></tr>
+              <tr><th scope="row">Problem Set 2.</th><td><time datetime="2024-09-13">9/13/24</time></td><td><time datetime="2024-09-20">9/20/24</time></td><td><a class="material-link" href="https://drive.google.com/file/d/1Zq350hdBatgd6WOhfVBO8AHNza-Hgu_a/view?usp=sharing">Problem Set 2.</a></td></tr>
+              <tr><th scope="row">Problem Set 3.</th><td><time datetime="2024-09-20">9/20/24</time></td><td><time datetime="2024-10-02">10/2/24 (updated)</time></td><td><a class="material-link" href="https://drive.google.com/file/d/1S4IjV6OdjHslKK5Bb_wJ1UD8ob0xcJHb/view?usp=sharing">Problem Set 3.</a></td></tr>
+              <tr><th scope="row">Problem Set 4</th><td><time datetime="2024-10-01">10/1/24</time></td><td><time datetime="2024-10-09">10/9/24</time></td><td><a class="material-link" href="https://drive.google.com/file/d/1CdfJLV0wlPe9n7Mj4t52S3CpuPpFNwMN/view?usp=sharing">Problem Set 4</a></td></tr>
+              <tr><th scope="row">Problem Set 5</th><td><time datetime="2024-10-23">10/23/24</time></td><td><time datetime="2024-10-30">10/30/24</time></td><td><a class="material-link" href="https://drive.google.com/file/d/1-C3QPLSlQTEhts3yu4E3razb48sNxPXq/view?usp=sharing">Problem Set 5</a></td></tr>
+              <tr><th scope="row">Problem Set 6</th><td><time datetime="2024-10-30">10/30/24</time></td><td><time datetime="2024-11-13">11/13/24</time></td><td><a class="material-link" href="https://drive.google.com/file/d/1BEJ1AhPL5W0Lh9tFBaPdwI0mNyIkY1Yx/view?usp=sharing">Problem Set 6</a></td></tr>
+              <tr><th scope="row">Problem Set 7</th><td><time datetime="2024-11-13">11/13/24</time></td><td><time datetime="2024-11-20">11/20/24</time></td><td><a class="material-link" href="https://drive.google.com/file/d/1GU1M-of982mhEj-NG-NFUiHwJxZ1PYLh/view?usp=sharing">Problem Set 7</a></td></tr>
+              <tr><th scope="row">Problem Set 8</th><td><time datetime="2024-11-20">11/20/24</time></td><td><time datetime="2024-12-04">12/4/24</time></td><td><a class="material-link" href="https://drive.google.com/file/d/1O2Ly7XESzdmF1xDLxISKnJnm4eGkUbYT/view?usp=sharing">Problem Set 8</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section schedule-section" id="schedule" aria-labelledby="schedule-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">04</p>
+          <div><p class="kicker">Fall 2024 · Tentative</p><h2 id="schedule-title">Schedule</h2></div>
+        </div>
+        <p class="table-hint">Scroll horizontally to see all columns on smaller screens.</p>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Course schedule table">
+          <table class="schedule-table">
+            <thead><tr><th scope="col">Date</th><th scope="col">Topic</th><th scope="col">Materials</th><th scope="col">Reading</th></tr></thead>
+            <tbody>
+              <tr><th scope="row"><time datetime="2024-09-03">9/3</time></th><td>Introduction, Secret-Key Encryption.</td><td><a class="material-link" href="https://drive.google.com/file/d/1d1HkCn3lOzLre4zKtiXwB_2v631OCyvb/view?usp=sharing">Lecture slides.</a></td><td>KL Chapter 1</td></tr>
+              <tr><th scope="row"><time datetime="2024-09-05">9/5</time></th><td>Perfect Secrecy.</td><td><a class="material-link" href="https://drive.google.com/file/d/1KfqXOS7wd2Zdfg8uqD8DSI1Xg-wZctUl/view?usp=sharing">Lecture slides.</a></td><td>KL Chapter 2</td></tr>
+              <tr><th scope="row"><time datetime="2024-09-10">9/10</time></th><td>Computational Security.</td><td><a class="material-link" href="https://drive.google.com/file/d/1zR4z2SB0qdvX8WwCimMjlUtIM4IcQUW7/view?usp=sharing">Lecture slides.</a></td><td>KL Chapter 3, Sections 3.1-3.2</td></tr>
+              <tr><th scope="row"><time datetime="2024-09-12">9/12</time></th><td>Pseudorandom Generators.</td><td><a class="material-link" href="https://drive.google.com/file/d/1OOVRRcZiRSDQdKxDRAV39hhmmsc6ykVG/view?usp=sharing">Lecture slides.</a></td><td>KL Chapter 3, Sections 3.3-3.4.1</td></tr>
+              <tr><th scope="row"><time datetime="2024-09-17">9/17</time></th><td>CPA-secure Encryption.</td><td><a class="material-link" href="https://drive.google.com/file/d/1ex-93kirBeV9hCXNOdJ_LwXpl_bOQMqf/view?usp=sharing">Lecture Slides.</a></td><td>KL Sections 3.4.2-3.5,</td></tr>
+              <tr><th scope="row"><time datetime="2024-09-19">9/19</time></th><td>Pseudorandom Functions.</td><td><a class="material-link" href="https://drive.google.com/file/d/1zxz50cBMT1qx-W2vQcSHmxbXBAGcYKoc/view?usp=sharing">Lecture Slides.</a></td><td>KL Sections 3.5, 8.5 (3rd Ed) ////// 3.6.1-3.6.2, 6.5 (1st Ed)</td></tr>
+              <tr><th scope="row"><time datetime="2024-09-24">9/24</time></th><td>PRFs continued. Pseudorandom Permutations (Block Ciphers).</td><td><a class="material-link" href="https://drive.google.com/file/d/1mc6Bu2NzUdekiKXBKL06t9OluYUAHjoE/view?usp=sharing">Lecture Slides.</a></td><td>KL Sections 3.5, 8.6 (3rd Ed) ////// 3.6.3-3.6.4, 5.2, 6.6 (1st Ed)</td></tr>
+              <tr><th scope="row"><time datetime="2024-09-26">9/26</time></th><td>PRPs continued, Authentication.</td><td><a class="material-link" href="https://drive.google.com/file/d/1-lfu5kfkuvpm5GDwnCWhAe2GRduEKxR8/view?usp=sharing">Lecture Slides.</a></td><td>KL Sections 4.1-4.3 (3rd Ed) ////// 4.1-4.4, (1st Ed)</td></tr>
+              <tr><th scope="row"><time datetime="2024-10-01">10/1</time></th><td>Authentication, CCA-secure Encryption.</td><td><a class="material-link" href="https://drive.google.com/file/d/1KmprNlI97lW3ezD8YJkcFB7vZP6u7LM2/view?usp=sharing">Lecture Slides.</a></td><td>KL Chapter 5 (3rd Ed) ////// 3.7, 4.8 (1st Ed)</td></tr>
+              <tr><th scope="row"><time datetime="2024-10-03">10/3</time></th><td>One-Way Functions, Hard-Core Predicates.</td><td><a class="material-link" href="https://drive.google.com/file/d/18nx8LmaZHeumwCPfMgHmy_OSoEl8X6At/view?usp=sharing">Lecture Slides</a></td><td>KL Section 8.1 (3rd Ed) ////// 6.1 (1st Ed)</td></tr>
+              <tr><th scope="row"><time datetime="2024-10-08">10/8</time></th><td>Goldreich-Levin Theorem.</td><td><a class="material-link" href="https://drive.google.com/file/d/1hE2r0ha7eW0JiJALLfdIwK99gK0h9WV9/view?usp=sharing">Lecture Slides</a></td><td>KL Section 8.3 (3rd Ed) ////// 6.3 (1st Ed). See also Sections 2.0, 2.2, and 3 of <a href="https://drive.google.com/file/d/1I5aObjjX_0Zlpn97mNiALAsqbqVJDV7d/view?usp=drive_link">these notes</a> (warning: the notes are somewhat dense).</td></tr>
+              <tr><th scope="row"><time datetime="2024-10-10">10/10</time></th><td>Cryptography from Number Theory (Part I).</td><td><a class="material-link" href="https://drive.google.com/file/d/1dUFVqt5F3Y6qQdWB9wIXj5unigQz3nnT/view?usp=sharing">Lecture Slides</a></td><td>KL Chapter 9, Section 10.2 (3rd Ed) ////// Chapter 7, Section 8.2 (1st Ed). <a href="https://people.csail.mit.edu/vinodv/6892-Fall2013/Angluin.pdf">Notes on Computational Number Theory</a>.</td></tr>
+              <tr class="no-class"><th scope="row"><time datetime="2024-10-15">10/15</time></th><td>No Class (Fall Recess)</td><td>—</td><td>—</td></tr>
+              <tr class="no-class"><th scope="row"><time datetime="2024-10-17">10/17</time></th><td>No Class: (Fall Recess)</td><td>—</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2024-10-22">10/22</time></th><td>Cryptography from Number Theory (Part II), Public-Key Encryption.</td><td><a class="material-link" href="https://drive.google.com/file/d/1A3xNE3QRSELTQev5e_37ueqRRIVzQY-b/view?usp=sharing">Lecture Slides</a></td><td>KL Chapter 9, Section 10.2 (3rd Ed) ////// Chapter 7, Section 8.2 (1st Ed).</td></tr>
+              <tr><th scope="row"><time datetime="2024-10-24">10/24</time></th><td>Cryptography from Number Theory, Public-Key Encryption (Part III).</td><td><a class="material-link" href="https://drive.google.com/file/d/1jjQ2EdCwnYMxL5EB5lro6d1SvZxz0KIk/view?usp=sharing">Lecture Slides.</a></td><td>KL Chapter 9, Section 10.2 (3rd Ed) ////// Chapter 7, Section 8.2 (1st Ed).</td></tr>
+              <tr><th scope="row"><time datetime="2024-10-29">10/29</time></th><td>Discrete Logarithms (PKE Part IV).</td><td><a class="material-link" href="https://drive.google.com/file/d/1KdBv2S4FcNrTZUU7-QL05_keeopaWjda/view?usp=sharing">Lecture Slides.</a></td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2024-10-31">10/31</time></th><td>Digital Signatures (Part I).</td><td><a class="material-link" href="https://drive.google.com/file/d/1XfYALcWk4npPkjH8g8WT1zkUzAO992lx/view?usp=sharing">Lecture Slides.</a></td><td>KL Sections 13.1, 13.2, 13.4.1 (3rd Ed)</td></tr>
+              <tr class="no-class"><th scope="row"><time datetime="2024-11-05">11/5</time></th><td>Class Cancelled</td><td>—</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2024-11-07">11/7</time></th><td>Digital Signatures (Part II). Hash functions and Random Oracles.</td><td><a href="https://cseweb.ucsd.edu/~mihir/papers/ro.pdf">Bellare-Rogaway Paper</a>.</td><td>KL Chapter 6 (3rd Ed). <a href="https://toc.cryptobook.us/book.pdf">Boneh-Shoup</a> Chapter 13.</td></tr>
+              <tr><th scope="row"><time datetime="2024-11-12">11/12</time></th><td>Digital Signatures (Part III): RSA and DSA.</td><td><a class="material-link" href="https://drive.google.com/file/d/1oEWi39THgZDd5wT80y-k6qkFfEjJAC9w/view?usp=sharing">Lecture Slides.</a></td><td><a href="https://toc.cryptobook.us/book.pdf">Boneh-Shoup</a> Chapter 13</td></tr>
+              <tr><th scope="row"><time datetime="2024-11-14">11/14</time></th><td>Zero-Knowledge Proofs (Part I).</td><td><a class="material-link" href="https://drive.google.com/file/d/15HjSw1GidkuAJu0Bf13tibyVOrbMx1xx/view?usp=sharing">Lecture Slides</a></td><td><a href="https://www.wisdom.weizmann.ac.il/~oded/foc-drafts.html">Goldreich</a> Chapter 4</td></tr>
+              <tr><th scope="row"><time datetime="2024-11-19">11/19</time></th><td>Zero-Knowledge Proofs (Part II).</td><td><a class="material-link" href="https://drive.google.com/file/d/1ycd8EAFp8zZZuuLKZI3TcP0SUnI-bA4n/view?usp=sharing">Lecture Slides</a></td><td><a href="https://www.wisdom.weizmann.ac.il/~oded/foc-drafts.html">Goldreich</a> Chapter 4</td></tr>
+              <tr><th scope="row"><time datetime="2024-11-21">11/21</time></th><td>Zero-Knowledge Proofs (Part III). Homomorphic Encryption (Part I).</td><td>—</td><td><a href="https://eprint.iacr.org/2015/939.pdf">Peikert</a> Sections 4.2, 5.2. <a href="https://advancedcrypto.github.io/Lecture1.pdf">Vaikuntanathan's Lecture Notes</a>.</td></tr>
+              <tr class="no-class"><th scope="row"><time datetime="2024-11-26">11/26</time></th><td>No Class (Friday Schedule)</td><td>—</td><td>—</td></tr>
+              <tr class="no-class"><th scope="row"><time datetime="2024-11-28">11/28</time></th><td>No Class (Thanksgiving)</td><td>—</td><td>—</td></tr>
+              <tr><th scope="row"><time datetime="2024-12-03">12/3</time></th><td>Learning with Errors, Homomorphic Encryption (Part II): Fully Homomorphic Encryption.</td><td>—</td><td><a href="https://eprint.iacr.org/2015/939.pdf">Peikert</a> Section 6.1. <a href="https://advancedcrypto.github.io/Lecture4a.pdf">Vaikuntanathan's Lecture Notes</a>.</td></tr>
+              <tr><th scope="row"><time datetime="2024-12-05">12/5</time></th><td>Homomorphic Encryption (Part III). Delegation of Computation.</td><td>—</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="resources" aria-labelledby="resources-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">05</p>
+          <div><p class="kicker">References and links</p><h2 id="resources-title">Resources</h2></div>
+        </div>
+        <div class="resources-grid">
+          <article class="resource-block resource-primary">
+            <p class="resource-label">Textbooks</p>
+            <p>There is no official textbook for this course. The textbook most relevant to COS 433 is <a href="https://www.amazon.com/Introduction-Cryptography-Chapman-Network-Security/dp/1466570261">Katz and Lindell</a>.</p>
+            <p><a href="https://toc.cryptobook.us/">Boneh-Shoup</a> and <a href="https://www.wisdom.weizmann.ac.il/~oded/foc-book.html">Goldreich</a> are somewhat more advanced textbooks.</p>
+            <p>These <a href="https://people.csail.mit.edu/vinodv/6892-Fall2013/Angluin.pdf">lecture notes by Angluin</a> are a useful reference on computational number theory.</p>
+          </article>
+          <article class="resource-block">
+            <p class="resource-label">Course Websites</p>
+            <p>The courses most closely related to this one are <a href="https://cs127.boazbarak.org/">CS 127 at Harvard</a>, <a href="http://mit6875.org/">6.875 at MIT</a>, and <a href="https://mzhandry.github.io/courses/2020-Fall-COS433/">prior iterations of COS 433 at Princeton</a>. However, none of these courses map exactly onto this one; in particular, we will depart fairly significantly from previous versions of COS 433.</p>
+          </article>
+          <article class="resource-block">
+            <p class="resource-label">Advanced Readings</p>
+            <ul class="resource-list">
+              <li><a href="https://drive.google.com/file/d/1I5aObjjX_0Zlpn97mNiALAsqbqVJDV7d/view?usp=drive_link">Notes</a> on One-Way Functions and Pseudorandom Generators</li>
+              <li><a href="https://link.springer.com/book/10.1007/978-3-319-57048-8">Tutorials</a> on the foundations of cryptography (ed. Yehuda Lindell)</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><p><strong>COS 433 / 533</strong> · Cryptography · Fall 2024</p><p>Princeton University</p></div>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>

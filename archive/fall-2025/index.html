@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Archived Fall 2025 offering of COS 433 / MAT 473: Cryptography at Princeton University.">
+    <meta name="theme-color" content="#e77500">
+    <title>COS 433: Cryptography — Fall 2025 Archive</title>
+    <link rel="stylesheet" href="../../style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="header-rule" aria-hidden="true"></div>
+      <div class="header-inner">
+        <a class="course-mark" href="#top" aria-label="COS 433 home">
+          <span>COS 433</span>
+          <span class="course-mark-divider" aria-hidden="true">/</span>
+          <span>MAT 473</span>
+        </a>
+        <p class="university">Princeton University</p>
+      </div>
+      <nav class="site-nav" aria-label="Course navigation">
+        <div class="nav-inner">
+          <a href="#overview">Overview</a>
+          <a href="#policies">Policies</a>
+          <a href="#problem-sets">Problem Sets</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#resources">Resources</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="course-title">
+        <div class="hero-copy">
+          <p class="archive-notice">Archived offering · <a href="../../">View the current course</a></p>
+          <p class="eyebrow">Fall 2025 · COS 433 / MAT 473</p>
+          <h1 id="course-title">Cryptography</h1>
+          <p class="hero-intro">Welcome! This is the course homepage for the Fall 2025 iteration of COS 433/MAT 473.</p>
+        </div>
+        <dl class="course-facts">
+          <div>
+            <dt>Meets</dt>
+            <dd>Tuesdays and Thursdays<br>10:40am–12pm</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd><a href="https://experience.arcgis.com/experience/c3585beaec354f56b1427144ad3e31cf/#data_s=where:dataSource_2-19460542025-layer-49:BL_ID=%270101%27">EQuad A224</a></dd>
+          </div>
+          <div>
+            <dt>Instructor</dt>
+            <dd><a href="https://sites.google.com/view/alex-lombardi/home">Alex Lombardi</a><br><span>Office Hours: Thursdays at 12pm, CS 312</span></dd>
+          </div>
+          <div>
+            <dt>TA</dt>
+            <dd>Sebastian Simon<br><span>Office Hours: Mondays at 5pm, CS 003</span></dd>
+          </div>
+          <div>
+            <dt>Staff email</dt>
+            <dd><a href="mailto:cos433staff@princeton.edu">cos433staff@princeton.edu</a></dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section" id="overview" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">01</p>
+          <div>
+            <p class="kicker">About the course</p>
+            <h2 id="overview-title">Overview</h2>
+          </div>
+        </div>
+        <div class="prose overview-grid">
+          <div>
+            <h3>Course Description</h3>
+            <p>An introduction to the theory of modern cryptography. Topics covered include private key and public key encryption schemes, digital signatures, pseudorandom generators and functions, zero-knowledge proofs, and some advanced topics.</p>
+          </div>
+          <aside class="prerequisite">
+            <h3>Prerequisites</h3>
+            <p>(COS 240 + one of {COS 330, COS 445, MAT 215, MAT 217}) or equivalent experience</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="policies" aria-labelledby="policies-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">02</p>
+          <div>
+            <p class="kicker">Expectations</p>
+            <h2 id="policies-title">Course Requirements and Policies</h2>
+          </div>
+        </div>
+        <div class="policy-grid">
+          <article class="policy-block policy-lead">
+            <h3>Problem Sets</h3>
+            <p>There will be 6 graded problem sets, assigned roughly once every two weeks. Problem sets will typically be released on Wednesdays at 11:59pm Eastern Time and will be due two weeks later. Problem Set 0 is ungraded (but please submit a survey response!)</p>
+            <p>Enrolled students should submit solutions to the problem sets on Gradescope. Solutions must be typed; we strongly encourage typesetting solutions in LaTeX.</p>
+            <p>All problem sets will be posted below over the course of the semester.</p>
+          </article>
+
+          <article class="policy-block">
+            <h3>Collaboration Policy</h3>
+            <p>You are free (and strongly encouraged!) to collaborate with each other on problem set 1-5. Please adhere to the following policies regarding collaboration and attribution.</p>
+            <ul>
+              <li>Individually write up problem set solutions in your own words. You may not share write-ups with your collaborators.</li>
+              <li>List all student collaborators and consulted outside sources (e.g. textbooks, course notes) in your problem set solutions.</li>
+              <li>You may not consult large language models or AI assistants such as (Chat)GPT, Claude, Gemini, etc.</li>
+              <li>You may not collaborate with other students on Problem Set 6.</li>
+            </ul>
+          </article>
+
+          <article class="policy-block">
+            <h3>Late Submission and Homework Grading Policy</h3>
+            <p>You may take up to two late days for any problem set. These extensions are granted automatically (no need to ask permission!). We cannot accept any submissions that are more than two days late. If you have an extenuating circumstance such as a medical emergency, please reach out to the course staff.</p>
+            <p>To encourage timely submission, two bonus points (out of 100) will be granted to submissions that are on time.</p>
+          </article>
+
+          <article class="policy-block grade-block">
+            <h3>Your Course Grade</h3>
+            <p>Problem Sets 1-5 jointly count for 75% of your grade, and Problem Set 6 counts for 25% of your grade.</p>
+            <div class="grade-bar" aria-label="Problem Sets 1 through 5: 75 percent; Problem Set 6: 25 percent">
+              <span class="grade-major">75%</span>
+              <span class="grade-final">25%</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="problem-sets" aria-labelledby="problem-sets-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">03</p>
+          <div>
+            <p class="kicker">Assignments</p>
+            <h2 id="problem-sets-title">Problem Sets</h2>
+          </div>
+        </div>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Problem sets table">
+          <table class="assignments-table">
+            <thead>
+              <tr>
+                <th scope="col">Assignment</th>
+                <th scope="col">Released</th>
+                <th scope="col">Due</th>
+                <th scope="col">Links</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Problem Set 0 <span class="table-note">Survey + Optional Probability Review</span></th>
+                <td><time datetime="2025-09-02">9/2/25</time></td>
+                <td><time datetime="2025-09-10">9/10/25</time></td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1mNxMsKFDrl95A7F9PqFOZQiuWbNlYHRM/view?usp=sharing">Problem Set 0</a></td>
+              </tr>
+              <tr>
+                <th scope="row">Problem Set 1</th>
+                <td><time datetime="2025-09-10">9/10/25</time></td>
+                <td><time datetime="2025-09-24">9/24/25</time></td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1ofBNLGhEuape5FYLobUscshnz31FVt6W/view?usp=sharing">Problem Set 1</a></td>
+              </tr>
+              <tr>
+                <th scope="row">Problem Set 2</th>
+                <td><time datetime="2025-09-24">9/24/25</time></td>
+                <td><time datetime="2025-10-08">10/8/25</time></td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1rUUYWQr43rkQzmB7Y6rSuH6g5ggceOsh/view?usp=sharing">Problem Set 2</a></td>
+              </tr>
+              <tr>
+                <th scope="row">Problem Set 3</th>
+                <td><time datetime="2025-10-08">10/8/25</time></td>
+                <td><time datetime="2025-10-29">10/29/25</time></td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1Psp8YpwKbO79skHFvjVSNlT0OXltsY72/view?usp=sharing">Problem Set 3</a></td>
+              </tr>
+              <tr>
+                <th scope="row">Problem Set 4</th>
+                <td><time datetime="2025-10-29">10/29/25</time></td>
+                <td><time datetime="2025-11-12">11/12/25</time></td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1hQ73hGX8A3OjOv0yLRyYJWFOtnxaP1eu/view?usp=sharing">Problem Set 4</a></td>
+              </tr>
+              <tr>
+                <th scope="row">Problem Set 5</th>
+                <td><time datetime="2025-11-12">11/12/25</time></td>
+                <td><time datetime="2025-12-03">12/3/25</time></td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1x2aHWY-1zoCBPLWrW2ozeSrdrJTIGe32/view?usp=sharing">Problem Set 5</a></td>
+              </tr>
+              <tr>
+                <th scope="row">Problem Set 6/Final <span class="table-note">No collaboration allowed.</span></th>
+                <td><time datetime="2025-12-01">12/1/25</time></td>
+                <td><time datetime="2025-12-14">12/14/25</time></td>
+                <td><span class="availability">available only on gradescope</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section schedule-section" id="schedule" aria-labelledby="schedule-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">04</p>
+          <div>
+            <p class="kicker">Fall 2025 · Tentative</p>
+            <h2 id="schedule-title">Schedule</h2>
+          </div>
+        </div>
+        <p class="table-hint">Scroll horizontally to see all columns on smaller screens.</p>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Course schedule table">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Topic</th>
+                <th scope="col">Materials</th>
+                <th scope="col">Reading</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><time datetime="2025-09-02">9/2</time></th>
+                <td>Introduction, Secret-Key Encryption.</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/18-8f35EoISDf7b5LdAP99ct_5Gtya00k/view?usp=drive_link">Lecture slides</a></td>
+                <td>KL Chapter 1.</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-09-04">9/4</time></th>
+                <td>Perfect Secrecy.</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/12aoy3l3z8WPxBjiun3dVMg1784HGVq_s/view?usp=sharing">Lecture slides</a></td>
+                <td>KL Chapter 2.</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-09-09">9/9</time></th>
+                <td>Computational Security.</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1PIK7JbDWfezz9xmwLi-mUh3DCpV3vAPE/view?usp=sharing">Lecture slides</a></td>
+                <td>KL Chapter 3, Sections 3.1-3.2</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-09-11">9/11</time></th>
+                <td>Pseudorandom Generators.</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1rcJu6Id6TrLnGwtyPobHC7Zx806gvZAl/view?usp=sharing">Lecture slides</a></td>
+                <td>KL Chapter 3, Sections 3.3-3.4.1</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-09-16">9/16</time></th>
+                <td>CPA-secure secret-key encryption.</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1RD-7Ivets2uTHooRAUW42wmRlKIAdzxn/view?usp=sharing">Lecture slides</a></td>
+                <td>KL Sections 3.4.2-3.5</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-09-18">9/18</time></th>
+                <td>Pseudorandom Functions.</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1CBSHwnSHDPjiQ8L0jfFwEDRs4XE1sNVu/view?usp=sharing">Lecture slides</a></td>
+                <td>KL Sections 3.5, 8.5</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-09-23">9/23</time></th>
+                <td>Pseudorandom Permutations and Block Ciphers.</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1DyHzp0PgN_S6KBxNfxg01xQQ3-xSGrtK/view?usp=sharing">Lecture slides</a></td>
+                <td>KL Sections 4.1-4.3</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-09-25">9/25</time></th>
+                <td>Authentication, CCA-secure encryption.</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1zrkRRrMTCy5ecGZ3jvvA7op30GhUSkqJ/view?usp=sharing">Lecture slides</a></td>
+                <td>KL Chapter 5</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-09-30">9/30</time></th>
+                <td>One-Way Functions, Hard-Core Predicates.</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1qXOz8G_7vWf9zZa-Jchz05e4fZweLjlv/view?usp=sharing">Lecture Slides</a></td>
+                <td>KL Section 8.1</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-10-02">10/2</time></th>
+                <td>Goldreich-Levin Theorem.</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1RoXskes45ksb7o4kS0N7EIjdBux50q77/view?usp=sharing">Lecture Slides</a></td>
+                <td>KL Section 8.3</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-10-07">10/7</time></th>
+                <td>Cryptography from Number Theory (Part I).</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1siyY0_MF6hfh0OU7AZ8KRLyNMC4eXglv/view?usp=sharing">Lecture Slides</a></td>
+                <td>KL Chapter 9, Section 10.2. <a href="https://people.csail.mit.edu/vinodv/6892-Fall2013/Angluin.pdf">Notes on Computational Number Theory</a>.</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-10-09">10/9</time></th>
+                <td>Cryptography from Number Theory (Part II), Public-Key Encryption.</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1XM1lCHMiwD9O0X9BN7FLMHGYerb-CwvB/view?usp=sharing">Lecture Slides</a></td>
+                <td>KL Chapter 9, Section 10.2</td>
+              </tr>
+              <tr class="no-class">
+                <th scope="row"><time datetime="2025-10-14">10/14</time></th>
+                <td>No class (Fall Recess)</td>
+                <td aria-label="No materials">—</td>
+                <td aria-label="No reading">—</td>
+              </tr>
+              <tr class="no-class">
+                <th scope="row"><time datetime="2025-10-16">10/16</time></th>
+                <td>No class (Fall Recess)</td>
+                <td aria-label="No materials">—</td>
+                <td aria-label="No reading">—</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-10-21">10/21</time></th>
+                <td>Cryptography from Number Theory, Public-Key Encryption (Part III).</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1wHSw-YWmD0M4wyPM2nEdthQq2Al0sqWq/view?usp=sharing">Lecture Slides.</a></td>
+                <td>KL Chapter 9, Section 10.2</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-10-23">10/23</time></th>
+                <td>Discrete Logarithms (PKE Part IV).</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1MPDcsbA6n1McgMyE3VOOz8hIDOcM-lq3/view?usp=sharing">Lecture Slides.</a></td>
+                <td>KL Chapter 9, Section 10.2</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-10-28">10/28</time></th>
+                <td>Digital Signatures (Part I). RSA signatures. One-time signatures.</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1XCKcaAiaWb82TvBILSTglvpg1WAm1U7z/view?usp=sharing">Lecture Slides</a></td>
+                <td>KL Sections 13.1, 13.2, 13.4.1</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-10-30">10/30</time></th>
+                <td>Digital Signatures (Part II). Hash functions and the random oracle model.</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1oX5jZvQ5BwzfqXJ_H4mOMocNYzBipdSi/view?usp=sharing">Lecture Slides</a></td>
+                <td>KL Chapter 6.</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-11-04">11/4</time></th>
+                <td>Digital Signatures (Part III). Hash functions (continued), RSA signatures.</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1Dc5X8AwZjN6Wyof--a5vnM1j_wyb1w2i/view?usp=sharing">Lecture Slides</a></td>
+                <td>KL Chapter 6, KL Sections 13.4-13.5</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-11-06">11/6</time></th>
+                <td>Digital Signatures (Part IV): DSA signatures. Public-key crypto recap.</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1dXNvu3mXZztiOi_9j07PPttYM57ew-uw/view?usp=sharing">Lecture Slides</a></td>
+                <td>KL Sections 13.4-13.5.</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-11-11">11/11</time></th>
+                <td>Zero-Knowledge Proofs (Part I).</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1dofGlDNZ3c76ZO-uIUDTd1GIA-BU_zuX/view?usp=sharing">Lecture Slides.</a></td>
+                <td><a href="https://www.wisdom.weizmann.ac.il/~oded/foc-drafts.html">Goldreich</a> Chapter 4.</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-11-13">11/13</time></th>
+                <td>Zero-Knowledge Proofs (Part II).</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1VFEh350lSvOT8fN_5NuVF4pLzF_-3JDx/view?usp=sharing">Lecture Slides</a></td>
+                <td><a href="https://www.wisdom.weizmann.ac.il/~oded/foc-drafts.html">Goldreich</a> Chapter 4.</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-11-18">11/18</time></th>
+                <td>Zero-Knowledge Proofs (Part III).</td>
+                <td><a class="material-link" href="https://drive.google.com/file/d/1jfxRk-QSm9E1-xD0cqAn1sD_DAxAmkL5/view?usp=sharing">Lecture Slides (draft)</a></td>
+                <td>Goldreich Chapter 4.</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-11-20">11/20</time></th>
+                <td>Learning with Errors, Homomorphic Encryption (Part I).</td>
+                <td aria-label="No materials">—</td>
+                <td><a href="https://eprint.iacr.org/2015/939.pdf">Peikert</a> Sections 4.2, 5.2. <a href="https://advancedcrypto.github.io/Lecture1.pdf">Vaikuntanathan's Lecture Notes</a>.</td>
+              </tr>
+              <tr class="no-class">
+                <th scope="row"><time datetime="2025-11-25">11/25</time></th>
+                <td>No Class (Friday Schedule)</td>
+                <td aria-label="No materials">—</td>
+                <td aria-label="No reading">—</td>
+              </tr>
+              <tr class="no-class">
+                <th scope="row"><time datetime="2025-11-27">11/27</time></th>
+                <td>No Class (Thanksgiving)</td>
+                <td aria-label="No materials">—</td>
+                <td aria-label="No reading">—</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-12-03">12/3</time></th>
+                <td>Learning with Errors, Homomorphic Encryption (Part II).</td>
+                <td aria-label="No materials">—</td>
+                <td><a href="https://eprint.iacr.org/2015/939.pdf">Peikert</a> Section 6.1. <a href="https://advancedcrypto.github.io/Lecture4a.pdf">Vaikuntanathan's Lecture Notes</a>.</td>
+              </tr>
+              <tr>
+                <th scope="row"><time datetime="2025-12-05">12/5</time></th>
+                <td aria-label="No topic listed">—</td>
+                <td aria-label="No materials listed">—</td>
+                <td aria-label="No reading listed">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="resources" aria-labelledby="resources-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">05</p>
+          <div>
+            <p class="kicker">References and links</p>
+            <h2 id="resources-title">Resources</h2>
+          </div>
+        </div>
+        <div class="resources-grid">
+          <article class="resource-block resource-primary">
+            <p class="resource-label">Textbooks</p>
+            <p>There is no official textbook for this course. The textbook most relevant to COS 433 is <a href="https://www.amazon.com/Introduction-Cryptography-Chapman-Network-Security/dp/0815354363?crid=26S3CMSML5BNW&amp;dib=eyJ2IjoiMSJ9.MkAYgjB3NdQPfsVznnhBB7H2rwZAd39FW0QY09JhkgXg32PTzg06QoyiJFtkW-ui.Piqp25gcq0TBzhizxxLYWNKhxDN2q-RNJmiVXj6zwCg&amp;dib_tag=se&amp;keywords=introduction+to+modern+cryptography+katz+lindell&amp;qid=1756949759&amp;s=books&amp;sprefix=introduction+to+modern+cryptography+katz+lindell%2Cstripbooks%2C89&amp;sr=1-1">Katz and Lindell</a> (3rd edition).</p>
+            <p><a href="https://toc.cryptobook.us/">Boneh-Shoup</a> and <a href="https://www.wisdom.weizmann.ac.il/~oded/foc-book.html">Goldreich</a> are somewhat more advanced textbooks.</p>
+            <p>These <a href="https://people.csail.mit.edu/vinodv/6892-Fall2013/Angluin.pdf">lecture notes by Angluin</a> are a useful reference on computational number theory.</p>
+          </article>
+
+          <article class="resource-block">
+            <p class="resource-label">Course Websites</p>
+            <p>See <a href="https://sites.google.com/view/alex-lombardi/home/cos-433533-fall-2024-princeton?authuser=0">here</a> for the Fall 2024 course web site.</p>
+            <p>The courses most closely related to this one are <a href="https://cs127.boazbarak.org/">CS 127 at Harvard</a>, <a href="http://mit6875.org/">6.875 at MIT</a>, and <a href="https://mzhandry.github.io/courses/2020-Fall-COS433/">prior iterations of COS 433 at Princeton</a>.</p>
+          </article>
+
+          <article class="resource-block">
+            <p class="resource-label">Advanced Readings</p>
+            <ul class="resource-list">
+              <li><a href="https://drive.google.com/file/d/1I5aObjjX_0Zlpn97mNiALAsqbqVJDV7d/view?usp=drive_link">Notes</a> on One-Way Functions and Pseudorandom Generators</li>
+              <li><a href="https://link.springer.com/book/10.1007/978-3-319-57048-8">Tutorials</a> on the foundations of cryptography (ed. Yehuda Lindell)</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p><strong>COS 433 / MAT 473</strong> · Cryptography · Fall 2025</p>
+        <p>Princeton University</p>
+      </div>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>
