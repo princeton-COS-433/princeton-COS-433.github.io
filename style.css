@@ -338,6 +338,10 @@ h1 {
   font-size: 0.9rem;
 }
 
+.staff-member + .staff-member {
+  margin-top: 0.75rem;
+}
+
 .section {
   padding-block: clamp(4rem, 8vw, 7rem);
   border-top: 1px solid var(--line-dark);
