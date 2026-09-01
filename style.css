@@ -536,6 +536,10 @@ tbody th {
   text-decoration: none;
 }
 
+.current-schedule .material-link::before {
+  content: "Slides ";
+}
+
 .schedule-section {
   width: min(calc(100% - 3rem), 1320px);
 }
