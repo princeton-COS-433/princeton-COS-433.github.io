@@ -558,6 +558,29 @@ tbody th {
   font-style: italic;
 }
 
+.schedule-summary {
+  max-width: 52rem;
+  margin: -1rem 0 2rem;
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-size: 1.1rem;
+}
+
+.calendar-table th:first-child {
+  width: 9rem;
+  white-space: nowrap;
+}
+
+.calendar-table tbody td {
+  color: var(--ink-soft);
+}
+
+.calendar-table .no-class > * {
+  color: var(--ink-soft);
+  background: #f1eee8;
+  font-style: italic;
+}
+
 .table-hint {
   display: none;
   margin: -1.5rem 0 1rem;
