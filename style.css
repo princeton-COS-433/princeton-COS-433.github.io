@@ -328,7 +328,7 @@ h1 {
   border-top: 2px solid var(--ink);
 }
 
-.course-facts div {
+.course-facts > div {
   display: grid;
   grid-template-columns: 7rem 1fr;
   gap: 1rem;
@@ -350,8 +350,12 @@ h1 {
   font-size: 0.9rem;
 }
 
-.staff-member + .staff-member {
-  margin-top: 0.75rem;
+.staff-list {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .section {
@@ -726,7 +730,7 @@ tbody th {
 }
 
 @media (max-width: 480px) {
-  .course-facts div {
+  .course-facts > div {
     grid-template-columns: 1fr;
     gap: 0.2rem;
   }
