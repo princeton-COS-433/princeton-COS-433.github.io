@@ -544,6 +544,14 @@ tbody th {
   content: "Slides ";
 }
 
+.hide-unreleased-slides .material-link[href^="slides/fall-2026/"]:not([href$="L01-final.pdf"]) {
+  display: none;
+}
+
+.hide-unreleased-slides td:has(> .material-link[href^="slides/fall-2026/"]:not([href$="L01-final.pdf"]))::after {
+  content: "—";
+}
+
 .schedule-section {
   width: min(calc(100% - 3rem), 1320px);
 }
