@@ -544,6 +544,10 @@ tbody th {
   content: "Slides ";
 }
 
+.current-schedule .published-slide::before {
+  content: none;
+}
+
 .hide-unreleased-slides .material-link[href^="slides/fall-2026/"]:not([href$="L01-final.pdf"]):not([href$="L02-final.pdf"]) {
   display: none;
 }
