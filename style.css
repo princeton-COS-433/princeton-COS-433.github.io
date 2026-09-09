@@ -544,11 +544,11 @@ tbody th {
   content: "Slides ";
 }
 
-.hide-unreleased-slides .material-link[href^="slides/fall-2026/"]:not([href$="L01-final.pdf"]) {
+.hide-unreleased-slides .material-link[href^="slides/fall-2026/"]:not([href$="L01-final.pdf"]):not([href$="L02-final.pdf"]) {
   display: none;
 }
 
-.hide-unreleased-slides td:has(> .material-link[href^="slides/fall-2026/"]:not([href$="L01-final.pdf"]))::after {
+.hide-unreleased-slides td:has(> .material-link[href^="slides/fall-2026/"]:not([href$="L01-final.pdf"]):not([href$="L02-final.pdf"]))::after {
   content: "—";
 }
 
