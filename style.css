@@ -548,11 +548,15 @@ tbody th {
   content: none;
 }
 
-.hide-unreleased-slides .material-link[href^="slides/fall-2026/"]:not([href$="L01-final.pdf"]):not([href$="L02-final.pdf"]):not([href$="L03-final.pdf"]):not([href$="L04-final.pdf"]):not([href$="L05-final.pdf"]):not([href$="L06-draft.pdf"]) {
+.current-schedule .draft-notes::before {
+  content: none;
+}
+
+.hide-unreleased-slides .material-link[href^="slides/fall-2026/"]:not([href$="L01-final.pdf"]):not([href$="L02-final.pdf"]):not([href$="L03-final.pdf"]):not([href$="L04-final.pdf"]):not([href$="L05-final.pdf"]):not([href$="L06-draft.pdf"]):not([href$="L07-draft.pdf"]) {
   display: none;
 }
 
-.hide-unreleased-slides td:has(> .material-link[href^="slides/fall-2026/"]:not([href$="L01-final.pdf"]):not([href$="L02-final.pdf"]):not([href$="L03-final.pdf"]):not([href$="L04-final.pdf"]):not([href$="L05-final.pdf"]):not([href$="L06-draft.pdf"]))::after {
+.hide-unreleased-slides td:has(> .material-link[href^="slides/fall-2026/"]:not([href$="L01-final.pdf"]):not([href$="L02-final.pdf"]):not([href$="L03-final.pdf"]):not([href$="L04-final.pdf"]):not([href$="L05-final.pdf"]):not([href$="L06-draft.pdf"]):not([href$="L07-draft.pdf"]))::after {
   content: "—";
 }
 
