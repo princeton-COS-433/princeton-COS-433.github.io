@@ -548,10 +548,6 @@ tbody th {
   content: none;
 }
 
-.current-schedule .notes-link::before {
-  content: none;
-}
-
 .hide-unreleased-slides .material-link[href^="slides/fall-2026/"]:not([href$="L01-final.pdf"]):not([href$="L02-final.pdf"]):not([href$="L03-final.pdf"]):not([href$="L04-final.pdf"]):not([href$="L05-final.pdf"]):not([href$="L06-final.pdf"]):not([href$="L07-final.pdf"]) {
   display: none;
 }
